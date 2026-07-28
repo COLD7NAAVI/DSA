@@ -1,31 +1,29 @@
-/*# Count Digits
+/*
+============================================================
+Problem : Count Digits
+============================================================
 
-## Problem
-Count the number of digits present in an integer.
+Approach:
+1. Handle the special case when the number is 0.
+2. Initialize a counter.
+3. Repeatedly divide the number by 10.
+4. Increment the counter after removing each digit.
+5. Print the total digit count.
 
-## Approach
-Repeatedly divide the number by 10 until it becomes 0.
-Each division removes one digit.
+Time Complexity:
+O(log10 n)
 
-## Algorithm
-1. If n == 0, answer is 1.
-2. Initialize count = 0.
-3. While n != 0:
-   - count++
-   - n = n / 10
-4. Print count.
-
-## Time Complexity
-O(log n)
-
-## Space Complexity
+Space Complexity:
 O(1)
 
-## Key Concepts
-- Digit Removal (/10)
-- Loop until number becomes 0
-- Works for positive and negative integers*/
+Concepts Used:
+- Digit Manipulation
+- Integer Division (/)
+- Loops
+- Counter
 
+============================================================
+*/
 #include <iostream>
 using namespace std;
 
